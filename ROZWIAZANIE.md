@@ -1,4 +1,4 @@
-# Jesteśmy Teamem number 22 (Jakub Gawęda, )
+# Jesteśmy Teamem number 22 (Jakub Gawęda, Daniel Krywult)
 
 # Zadanie 1
  * Według opisu
