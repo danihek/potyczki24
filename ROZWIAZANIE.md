@@ -2,6 +2,41 @@
 Instalacja longhorna podazajac https://longhorn.io/
 Doinstalowanie yamla iscsi z repo ranchera z githuba
 
+# Zadanie 7
+Adrianie, istnieją dwie główne metody, aby znaleźć YAML dla istniejącego 
+zasobu w klastrze Kubernetes:
+
+ * Użyj komendy kubectl get: Możesz użyć polecenia `kubectl get` do 
+wylistowania zasobów w klastrze. Następnie możesz użyć komendy `kubectl 
+get <rodzaj_zasobu> <nazwa_zasobu> -o yaml`, aby uzyskać YAML dla 
+konkretnego zasobu. Na przykład, jeśli chcesz uzyskać YAML dla zasobu 
+Deployment o nazwie "my-deployment", wykonaj: `kubectl get deployment 
+my-deployment -o yaml`.
+
+ * Użyj narzędzia do eksportu: Możesz także skorzystać z narzędzi 
+do eksportu konfiguracji klastra, takich jak `kubectl` z pluginem `krew`, 
+który umożliwia eksportowanie YAML dla wszystkich zasobów w klastrze. 
+Po zainstalowaniu pluginu, możesz użyć komendy `kubectl krew export 
+all -o yaml > plik.yaml`, aby wyeksportować konfigurację wszystkich 
+zasobów do pliku YAML.
+
+Pamiętaj, że obie metody są równie skuteczne, ale wybierz tę, która lepiej odpowiada twoim potrzebom i preferencjom.
+
+# Zadanie 7.5
+Uruchomienie kontenera MySQL na najprostszych domyślnych ustawieniach 
+nie jest zalecane z punktu widzenia bezpieczeństwa i wydajności. 
+Domyślne ustawienia mogą być podatne na ataki, takie jak brute force 
+czy SQL injection, oraz nie zapewniają optymalnych parametrów wydajnościowych 
+dla konkretnej aplikacji. Zamiast tego, zaleca się skonfigurowanie 
+MySQL zgodnie z zasadami bezpieczeństwa, takimi jak wykorzystanie silnych 
+haseł, ograniczenie dostępu do bazy danych, zabezpieczenie przed atakami 
+DDoS oraz optymalizacja parametrów wydajnościowych w zależności od potrzeb 
+aplikacji. Sugestia poprawy: Skonfigurowanie MySQL zgodnie z najlepszymi 
+praktykami bezpieczeństwa oraz optymalizacji wydajności, takimi jak 
+ustawienie silnych haseł, ograniczenie dostępu do bazy danych za pomocą 
+użytkowników i uprawnień, oraz dostosowanie parametrów konfiguracyjnych 
+do wymagań aplikacji.
+
 # Zadanie 8
 W Kubernetes, resource o nazwie Gateway jest używany do zarządzania 
 dostępem do aplikacji uruchomionych w klastrze. Jest to rodzaj obiektu, 
