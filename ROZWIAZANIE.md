@@ -2,6 +2,25 @@
 Instalacja longhorna podazajac https://longhorn.io/
 Doinstalowanie yamla iscsi z repo ranchera z githuba
 
+# Zadanie 6
+Aby zachować PersistentVolume i ponownie podłączyć go do Deploymentu po jego 
+wygaśnięciu i wznowieniu, można skorzystać z mechanizmu PVC (PersistentVolumeClaim) 
+w Kubernetes. W tym celu można skonfigurować PVC wraz z Deploymentem, który 
+używa tego PVC. Następnie, gdy Deployment jest skalowany do 0, PVC pozostaje 
+zachowany, a PersistentVolume jest nadal związany z PVC. Po ponownym wznowieniu 
+Deploymentu, PVC będzie próbować ponownie związać się z PersistentVolume, 
+który został zachowany. Przykład znaleźć można w pliku (przyklad_1.yaml).
+W powyższym przykładzie, PersistentVolumeClaim (PVC) o nazwie "moj-pvc" jest 
+zdefiniowany, który ma za zadanie żądać zasobu dyskowego o rozmiarze 1Gi. 
+Następnie Deployment "moj-deployment" używa tego PVC poprzez wolumin, który 
+jest montowany do kontenera w ścieżce "/moje-dane". Gdy Deployment jest 
+wygaszany, PVC pozostaje zachowany. Po wznowieniu Deploymentu, PVC ponownie 
+próbuje związać się z PersistentVolume, który został zachowany, umożliwiając 
+zachowanie danych.
+Zapewnienie, że PersistentVolume zostanie zachowany i ponownie podłączony 
+po wznowieniu Deploymentu, wymaga odpowiedniej konfiguracji PVC oraz zgodnego 
+ustawienia Deploymentu z woluminem używającym PVC.
+
 # Zadanie 7
 Adrianie, istnieją dwie główne metody, aby znaleźć YAML dla istniejącego 
 zasobu w klastrze Kubernetes:
