@@ -1,6 +1,14 @@
+# Jesteśmy Teamem number 22 (Jakub Gawęda, )
+
+# Zadanie 1
+ * Według opisu
+
 # Zadanie 2
 Instalacja longhorna podazajac https://longhorn.io/
 Doinstalowanie yamla iscsi z repo ranchera z githuba
+
+# Zadanie 3
+ * Instalacja tetrisa z repo, dostępny w APPS
 
 # Zadanie 6
 Aby zachować PersistentVolume i ponownie podłączyć go do Deploymentu po jego 
