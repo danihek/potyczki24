@@ -4,8 +4,8 @@
  * Według opisu
 
 # Zadanie 2
-Instalacja longhorna podazajac https://longhorn.io/
-Doinstalowanie yamla iscsi z repo ranchera z githuba
+Instalacja longhorna podażajac https://longhorn.io/
+Doinstalowanie yamla iscsi z repo Ranchera z Githuba
 
 # Zadanie 3
  * Instalacja tetrisa z repo, dostępny w APPS
@@ -81,6 +81,10 @@ natomiast zapewnia kontrolę nad liczbą replik podów w klastrze,
 wskazując na konkretne obrazy kontenerów. Deployment natomiast 
 dostarcza funkcjonalności rolowania aktualizacji, 
 cofania zmian i zarządzania cyklem życia aplikacji.
+
+# Zadanie 10
+Podążanie za instrukcjami na stronie RKE2
+i dodanie yamla z upgrdem dla clustra
 
 # Zadanie 11
 Uzytkownicy oraz ich hasla:
