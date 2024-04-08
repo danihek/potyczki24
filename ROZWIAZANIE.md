@@ -1,3 +1,7 @@
+# Zadanie 2
+Instalacja longhorna podazajac https://longhorn.io/
+Doinstalowanie yamla iscsi z repo ranchera z githuba
+
 # Zadanie 8
 W Kubernetes, resource o nazwie Gateway jest używany do zarządzania 
 dostępem do aplikacji uruchomionych w klastrze. Jest to rodzaj obiektu, 
