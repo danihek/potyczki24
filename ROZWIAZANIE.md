@@ -19,3 +19,8 @@ natomiast zapewnia kontrolę nad liczbą replik podów w klastrze,
 wskazując na konkretne obrazy kontenerów. Deployment natomiast 
 dostarcza funkcjonalności rolowania aktualizacji, 
 cofania zmian i zarządzania cyklem życia aplikacji.
+
+# Zadanie 11
+Uzytkownicy oraz ich hasla:
+muhammed_yassuff: pECjNBZ15Q92oFYe <- Dyrektor IT
+muhhamad_yussuff: YZQC8r6zYfQng0MS <- Stażysta
